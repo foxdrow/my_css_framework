@@ -1,0 +1,42 @@
+/*------------- VISIBLE ELEMENTS -------------*/
+
+$sizeDevices: (
+  "s": 700px,
+  "m": 1000px,
+  "l": 1200px,
+  "xl": 1400px,
+);
+
+@each $name, $size in $sizeDevices {
+  .visible-#{$name} {
+    @media (max-width: $size) {
+      display: block !important;
+    }
+  }
+  .hidden-#{$name} {
+    @media (max-width: $size) {
+      display: none;
+    }
+  }
+  .hidden-print-#{$name} {
+    @media print {
+      display: none !important;
+    }
+  }
+  .visible-print-#{$name} {
+    @media print {
+      display: block;
+    }
+  }
+}
+
+.hidden-print {
+  @media print {
+    display: none !important;
+  }
+}
+.visible-print {
+  @media print {
+    display: block;
+  }
+}

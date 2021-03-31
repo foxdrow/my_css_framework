@@ -1,0 +1,30 @@
+/*----------------- DEFAULT BOX-SIZE ---------------*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*--------- DEFAULT FONT-SIZE & FONT-FAMILY ---------*/
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  font-size: 1.7rem;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/*------------------- FONT-FAMILY -------------------*/
+
+@mixin googleFonts($font) {
+  @import url("https://fonts.googleapis.com/css2?family=#{$font}");
+}
+
+@include googleFonts("Roboto");
+@include googleFonts("Open+Sans");

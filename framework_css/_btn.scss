@@ -1,0 +1,56 @@
+/*----------------- DEFAULT BUTTON ---------------*/
+
+%btn-default {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+/*------------------- BUTTON SIZE -----------------*/
+
+.l-btn {
+  padding: 0.9rem 1.7rem;
+  font-size: 2rem;
+}
+.s-btn {
+  padding: 0.3rem 0.9rem;
+  font-size: 1.4rem;
+}
+
+/*------------------- BUTTON COLOR -----------------*/
+
+$colorList: (
+  "blue": $color-blue,
+  "red": $color-red,
+  "green": $color-green,
+  "purple": $color-purple,
+  "black": $color-black,
+  "orange": $color-orange
+);
+
+/*----------------- BUTTON CONSTRUCT ---------------*/
+
+@each $name, $color in $colorList {
+  .btn-#{$name} {
+    @extend %btn-default;
+    background-color: $color;
+    &:hover {
+      cursor: pointer;
+      background-color: $color-white;
+      color: $color;
+      border: 1px solid $color;
+    }
+    &:disabled {
+      background-color: $color-grey;
+      color: $color;
+      border: 1px solid $color;
+      cursor: not-allowed;
+    }
+  }
+}

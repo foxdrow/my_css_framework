@@ -1,0 +1,586 @@
+/*----------------- DEFAULT BOX-SIZE ---------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*--------- DEFAULT FONT-SIZE & FONT-FAMILY ---------*/
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*------------------- FONT-FAMILY -------------------*/
+/*-------------------------- COLORS PALETTE -------------------------*/
+/*---------------------- DEFAULT COLORS ---------------------*/
+/*---------------------- BG & TEXT COLORS ---------------------*/
+.text-muted {
+  color: #8f9094;
+}
+
+.bg-muted {
+  background-color: #8f9094;
+}
+
+.text-primary {
+  color: #2a80d7;
+}
+
+.bg-primary {
+  background-color: #2a80d7;
+}
+
+.text-succes {
+  color: #1ac258;
+}
+
+.bg-succes {
+  background-color: #1ac258;
+}
+
+.text-info {
+  color: #a61ac2;
+}
+
+.bg-info {
+  background-color: #a61ac2;
+}
+
+.text-warning {
+  color: #ff7f00;
+}
+
+.bg-warning {
+  background-color: #ff7f00;
+}
+
+.text-error {
+  color: #df3b39;
+}
+
+.bg-error {
+  background-color: #df3b39;
+}
+
+/*----------------- GRID CONTAINER ---------------*/
+.container,
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*------------------- GRID ROWS ------------------*/
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/*----------------- GRID COLUMN DEFAULT ---------------*/
+.col {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 100%;
+}
+
+/*----------------- GRID COLUMN 1-12 / 12 ---------------*/
+.col-1 {
+  -ms-flex-preferred-size: 8.333333%;
+      flex-basis: 8.333333%;
+  max-width: 8.333333%;
+}
+
+.col-2 {
+  -ms-flex-preferred-size: 16.666667%;
+      flex-basis: 16.666667%;
+  max-width: 16.666667%;
+}
+
+.col-3 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  -ms-flex-preferred-size: 33.333333%;
+      flex-basis: 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-5 {
+  -ms-flex-preferred-size: 41.666667%;
+      flex-basis: 41.666667%;
+  max-width: 41.666667%;
+}
+
+.col-6 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  -ms-flex-preferred-size: 58.333333%;
+      flex-basis: 58.333333%;
+  max-width: 58.333333%;
+}
+
+.col-8 {
+  -ms-flex-preferred-size: 66.666667%;
+      flex-basis: 66.666667%;
+  max-width: 66.666667%;
+}
+
+.col-9 {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  -ms-flex-preferred-size: 83.333333%;
+      flex-basis: 83.333333%;
+  max-width: 83.333333%;
+}
+
+.col-11 {
+  -ms-flex-preferred-size: 91.666667%;
+      flex-basis: 91.666667%;
+  max-width: 91.666667%;
+}
+
+.col-12 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  max-width: 100%;
+}
+
+/*----------------- DEFAULT BUTTON ---------------*/
+.btn-blue, .btn-red, .btn-green, .btn-purple, .btn-black, .btn-orange {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+/*------------------- BUTTON SIZE -----------------*/
+.l-btn {
+  padding: 0.9rem 1.7rem;
+  font-size: 2rem;
+}
+
+.s-btn {
+  padding: 0.3rem 0.9rem;
+  font-size: 1.4rem;
+}
+
+/*------------------- BUTTON COLOR -----------------*/
+/*----------------- BUTTON CONSTRUCT ---------------*/
+.btn-blue {
+  background-color: #2a80d7;
+}
+
+.btn-blue:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #2a80d7;
+  border: 1px solid #2a80d7;
+}
+
+.btn-blue:disabled {
+  background-color: #8f9094;
+  color: #2a80d7;
+  border: 1px solid #2a80d7;
+  cursor: not-allowed;
+}
+
+.btn-red {
+  background-color: #df3b39;
+}
+
+.btn-red:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #df3b39;
+  border: 1px solid #df3b39;
+}
+
+.btn-red:disabled {
+  background-color: #8f9094;
+  color: #df3b39;
+  border: 1px solid #df3b39;
+  cursor: not-allowed;
+}
+
+.btn-green {
+  background-color: #1ac258;
+}
+
+.btn-green:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #1ac258;
+  border: 1px solid #1ac258;
+}
+
+.btn-green:disabled {
+  background-color: #8f9094;
+  color: #1ac258;
+  border: 1px solid #1ac258;
+  cursor: not-allowed;
+}
+
+.btn-purple {
+  background-color: #a61ac2;
+}
+
+.btn-purple:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #a61ac2;
+  border: 1px solid #a61ac2;
+}
+
+.btn-purple:disabled {
+  background-color: #8f9094;
+  color: #a61ac2;
+  border: 1px solid #a61ac2;
+  cursor: not-allowed;
+}
+
+.btn-black {
+  background-color: #353535;
+}
+
+.btn-black:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #353535;
+  border: 1px solid #353535;
+}
+
+.btn-black:disabled {
+  background-color: #8f9094;
+  color: #353535;
+  border: 1px solid #353535;
+  cursor: not-allowed;
+}
+
+.btn-orange {
+  background-color: #ff7f00;
+}
+
+.btn-orange:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #ff7f00;
+  border: 1px solid #ff7f00;
+}
+
+.btn-orange:disabled {
+  background-color: #8f9094;
+  color: #ff7f00;
+  border: 1px solid #ff7f00;
+  cursor: not-allowed;
+}
+
+/*------------------- DEFAULT ALERT -----------------*/
+.alert-success, .alert-info, .alert-warning, .alert-danger {
+  position: absolute;
+  color: #fff;
+  min-width: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  padding: 0.8rem;
+  border: solid 1px #8f9094;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+/*------------------- ALERT COLORS -----------------*/
+/*------------------ ALERT CONSTRUCT ----------------*/
+.alert-success {
+  background-color: #1ac258;
+}
+
+.alert-info {
+  background-color: #a61ac2;
+}
+
+.alert-warning {
+  background-color: #ff6600db;
+}
+
+.alert-danger {
+  background-color: rgba(191, 54, 54, 0.81);
+}
+
+/*------------- IMAGES RESPONSIVE -------------*/
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+/*--------------- IMAGES CIRCLE ---------------*/
+.img-circle {
+  border-radius: 1.5rem;
+}
+
+/*-------------- IMAGES THUMBAIL --------------*/
+.img-thumbail {
+  border-radius: 1px;
+}
+
+/*---------------- IMAGES BLUR ----------------*/
+.img-blur {
+  -webkit-filter: blur(6px);
+          filter: blur(6px);
+}
+
+/*------------- VISIBLE ELEMENTS -------------*/
+@media (max-width: 700px) {
+  .visible-s {
+    display: block !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .hidden-s {
+    display: none;
+  }
+}
+
+@media print {
+  .hidden-print-s {
+    display: none !important;
+  }
+}
+
+@media print {
+  .visible-print-s {
+    display: block;
+  }
+}
+
+@media (max-width: 1000px) {
+  .visible-m {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hidden-m {
+    display: none;
+  }
+}
+
+@media print {
+  .hidden-print-m {
+    display: none !important;
+  }
+}
+
+@media print {
+  .visible-print-m {
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  .visible-l {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hidden-l {
+    display: none;
+  }
+}
+
+@media print {
+  .hidden-print-l {
+    display: none !important;
+  }
+}
+
+@media print {
+  .visible-print-l {
+    display: block;
+  }
+}
+
+@media (max-width: 1400px) {
+  .visible-xl {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .hidden-xl {
+    display: none;
+  }
+}
+
+@media print {
+  .hidden-print-xl {
+    display: none !important;
+  }
+}
+
+@media print {
+  .visible-print-xl {
+    display: block;
+  }
+}
+
+@media print {
+  .hidden-print {
+    display: none !important;
+  }
+}
+
+@media print {
+  .visible-print {
+    display: block;
+  }
+}
+
+.navbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #505050;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  margin-right: 3rem;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  margin-top: 0;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  color: #fff;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+  color: #fff;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+  font-size: 1.7rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.navbar-nav .dropdown {
+  position: static;
+  margin-right: 2rem;
+}
+
+.navbar-nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #353535;
+  color: #fff;
+  min-width: 12rem;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 1rem;
+  z-index: 1;
+  margin-top: 0.3rem;
+}
+
+.navbar-nav .dropdown-content a {
+  padding: 0.7rem 1rem;
+  color: #fff;
+}
+
+.navbar-nav .dropdown:hover .dropdown-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar-nav .disabled {
+  color: #8f9094 !important;
+  cursor: not-allowed;
+}
+
+.navbar-nav form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 10rem;
+}
+
+.input-text {
+  display: inline-block;
+  font-weight: 400;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.7rem;
+  line-height: 1.5;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.input-text {
+  background-color: #353535;
+}
+/*# sourceMappingURL=css_framework.css.map */

@@ -1,0 +1,30 @@
+/*------------------- DEFAULT ALERT -----------------*/
+
+%alert {
+  position: absolute;
+  color: $color-white;
+  min-width: 50%;
+  transform: translateX(50%);
+  padding: 0.8rem;
+  border: solid 1px $color-grey;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+/*------------------- ALERT COLORS -----------------*/
+
+$alertColorList: (
+  "success": $color-green,
+  "info": $color-purple,
+  "warning": $color-warning-alert,
+  "danger": $color-red-alert,
+);
+
+/*------------------ ALERT CONSTRUCT ----------------*/
+
+@each $name, $color in $alertColorList {
+  .alert-#{$name} {
+    background-color: $color;
+    @extend %alert;
+  }
+}

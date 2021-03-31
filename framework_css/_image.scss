@@ -1,0 +1,24 @@
+/*------------- IMAGES RESPONSIVE -------------*/
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+/*--------------- IMAGES CIRCLE ---------------*/
+
+.img-circle {
+  border-radius: 1.5rem;
+}
+
+/*-------------- IMAGES THUMBAIL --------------*/
+
+.img-thumbail {
+  border-radius: 1px;
+}
+
+/*---------------- IMAGES BLUR ----------------*/
+
+.img-blur {
+  filter: blur(6px);
+}

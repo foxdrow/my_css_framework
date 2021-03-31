@@ -1,0 +1,15 @@
+%input-text-default {
+    display: inline-block;
+    font-weight: 400;
+    padding: 0.7rem 1.2rem;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    color: #fff;
+  }
+
+.input-text{
+    @extend %input-text-default;
+    background-color: $color-black;
+}

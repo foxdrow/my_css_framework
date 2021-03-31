@@ -1,0 +1,39 @@
+/*-------------------------- COLORS PALETTE -------------------------*/
+
+$color-blue: #2a80d7;
+$color-red: #df3b39;
+$color-black: rgb(53, 53, 53);
+$color-white: #fff;
+$color-purple: #a61ac2;
+$color-green: #1ac258;
+$color-grey: #8f9094;
+$color-yellow: #ffff00;
+$color-orange: #ff7f00;
+
+$color-red-alert: rgba(191, 54, 54, 0.81);
+$color-warning-alert: #ff6600db;
+$color-success-alert: #4bb543e3;
+$color-info-alert: #0571ecd7;
+$color-grey-nav: #505050;
+
+/*---------------------- DEFAULT COLORS ---------------------*/
+
+$defaultColorList: (
+  "muted": $color-grey,
+  "primary": $color-blue,
+  "succes": $color-green,
+  "info": $color-purple,
+  "warning": $color-orange,
+  "error": $color-red
+);
+
+/*---------------------- BG & TEXT COLORS ---------------------*/
+
+@each $name, $color in $defaultColorList {
+  .text-#{$name} {
+    color: $color;
+  }
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}

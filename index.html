@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./framework_css/css_framework.css" />
+    <title>Presentation framework_css</title>
+  </head>
+  <body class="container">
+    <h2>NAVBAR</h2>
+
+    <div class="navbar">
+      <a class="navbar-brand" href="#">Brand</a>
+      <ul class="navbar-nav">
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link" href="#">Link</a></li>
+        <li><a class="nav-link" href="#">Link2</a></li>
+        <li class="dropdown">
+          <a>drop⇓</a>
+          <div class="dropdown-content">
+            <a href="#">Drop-link 1</a>
+            <a href="#">Drop-link 2</a>
+            <a href="#" class="disabled">Drop-link 3</a>
+          </div>
+        </li>
+        <li><a class="nav-link disabled" href="#">Link3</a></li>
+      </ul>
+      <form>
+        <input
+          class="input-text"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn-blue" type="submit">Search</button>
+      </form>
+    </div>
+
+    <h2>RESPONSIVE GRID</h2>
+
+    <div class="row" style="height: 200px">
+      <div class="col-6 bg-warning">Col-6</div>
+      <div class="col bg-error">Col</div>
+    </div>
+    <div class="row" style="height: 200px">
+      <div class="col-5 bg-info">Col-5</div>
+      <div class="col-7 bg-primary">Col-7</div>
+    </div>
+    <div class="row" style="height: 200px">
+      <div class="col-4 bg-muted">Col-4</div>
+      <div class="col-8 bg-succes">Col-8</div>
+    </div>
+    <div class="row" style="height: 200px">
+      <div class="col-3 bg-error">Col-3</div>
+      <div class="col-9 bg-warning">Col-9</div>
+    </div>
+    <div class="row" style="height: 200px">
+      <div class="col-2 bg-primary">Col-2</div>
+      <div class="col-10 bg-info">Col-10</div>
+    </div>
+    <div class="row" style="height: 200px">
+      <div class="col-1 bg-succes">Col-1</div>
+      <div class="col-11 bg-muted">Col-11</div>
+    </div>
+    <div class="row" style="height: 200px">
+      <div class="col-12 bg-error">Col-12</div>
+    </div>
+
+    <h2>BUTTON</h2>
+
+    <div>
+      <button class="btn-blue s-btn">Blue button</button>
+      <button class="btn-purple">Purple Button</button>
+      <button class="btn-red l-btn">Red button</button>
+      <button class="btn-black l-btn">Black button</button>
+      <button class="btn-green">Green Button</button>
+      <button class="btn-orange s-btn">Orange button</button>
+      <button class="btn-purple">Purple Button</button>
+      <button class="btn-blue l-btn">Blue button</button>
+    </div>
+
+    <h2>ALERTE</h2>
+
+    <div class="alert-success">Ceci est une alerte: success</div>
+    <br />
+    <br />
+    <br />
+    <div class="alert-info">Ceci est une alerte: info</div>
+    <br />
+    <br />
+    <br />
+    <div class="alert-warning">Ceci est une alerte: warning</div>
+    <br />
+    <br />
+    <br />
+    <div class="alert-danger">Ceci est une alerte: danger</div>
+    <br />
+    <br />
+    <br />
+
+    <h2>HIDDEN SMALE</h2>
+
+    <div class="col-12 bg-info hidden-s" style="height: 200px">Col-12</div>
+
+    <h2>VISIBLE SMALE</h2>
+
+    <div class="col-12 bg-error visible-s" style="height: 200px; display: none">
+      Col-12
+    </div>
+
+    <style>
+      body {
+        background-color: rgb(45, 45, 45);
+        color: #fff;
+      }
+    </style>
+  </body>
+</html>
